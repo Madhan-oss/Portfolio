@@ -27,28 +27,28 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 md:py-32 border-b border-[#E7E0D2] dark:border-[#2E2B28] relative"
+      className="py-24 md:py-32 border-b border-[#DFE5DA] dark:border-[#223B2F] relative"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C86343] dark:bg-[#DF7A5A]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1B4D36] dark:bg-[#34D399]" />
               03 // Selected Portfolio
             </div>
             <h2 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-normal text-stone-900 dark:text-stone-50 tracking-tight leading-tight">
-              Featured Work<span className="text-[#C86343] dark:text-[#DF7A5A]">.</span>
+              Featured Work<span className="text-[#1B4D36] dark:text-[#34D399]">.</span>
             </h2>
           </div>
 
           {/* Toggle between Core Featured and All GitHub Repos */}
-          <div className="flex items-center gap-2 p-1.5 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-[#F4EFE6]/70 dark:bg-[#1F1D1C]/70">
+          <div className="flex items-center gap-2 p-1.5 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-[#EFF2EB]/70 dark:bg-[#15241D]/70">
             <button
               onClick={() => setViewMode("featured")}
               className={`px-4 py-1.5 rounded-full text-xs font-mono tracking-wider transition-all duration-200 ${
                 viewMode === "featured"
-                  ? "bg-white dark:bg-stone-800 text-[#C86343] dark:text-[#DF7A5A] shadow-xs font-semibold"
+                  ? "bg-white dark:bg-stone-800 text-[#1B4D36] dark:text-[#34D399] shadow-xs font-semibold"
                   : "text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200"
               }`}
             >
@@ -58,7 +58,7 @@ export default function Projects() {
               onClick={() => setViewMode("all")}
               className={`px-4 py-1.5 rounded-full text-xs font-mono tracking-wider transition-all duration-200 ${
                 viewMode === "all"
-                  ? "bg-white dark:bg-stone-800 text-[#C86343] dark:text-[#DF7A5A] shadow-xs font-semibold"
+                  ? "bg-white dark:bg-stone-800 text-[#1B4D36] dark:text-[#34D399] shadow-xs font-semibold"
                   : "text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200"
               }`}
             >
@@ -75,7 +75,7 @@ export default function Projects() {
             return (
               <article
                 key={project.id}
-                className="group p-6 sm:p-8 lg:p-10 rounded-3xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/80 dark:bg-stone-900/60 backdrop-blur-xs shadow-editorial hover:shadow-editorial-lg transition-all duration-500"
+                className="group p-6 sm:p-8 lg:p-10 rounded-3xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white/80 dark:bg-stone-900/60 backdrop-blur-xs shadow-editorial hover:shadow-editorial-lg transition-all duration-500"
               >
                 <div
                   className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center ${
@@ -88,7 +88,7 @@ export default function Projects() {
                       isReversed ? "lg:order-2" : "lg:order-1"
                     }`}
                   >
-                    <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[#E7E0D2] dark:border-[#2E2B28] bg-stone-100 dark:bg-stone-950 group-hover:border-[#C86343]/50 transition-colors">
+                    <div className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-[#DFE5DA] dark:border-[#223B2F] bg-stone-100 dark:bg-stone-950 group-hover:border-[#1B4D36]/50 transition-colors">
                       <Image
                         src={project.image}
                         alt={project.title}
@@ -98,7 +98,7 @@ export default function Projects() {
                       />
 
                       {/* Number Tag in Top Corner */}
-                      <div className="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border border-[#E7E0D2] dark:border-stone-700 text-stone-900 dark:text-stone-100 font-mono text-xs font-semibold">
+                      <div className="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border border-[#DFE5DA] dark:border-stone-700 text-stone-900 dark:text-stone-100 font-mono text-xs font-semibold">
                         PROJECT {project.number}
                       </div>
 
@@ -109,7 +109,7 @@ export default function Projects() {
                         aria-label={`View case study for ${project.title}`}
                       >
                         <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-stone-900 font-mono text-xs font-semibold shadow-lg hover:scale-105 transition-transform">
-                          <BookOpen className="w-3.5 h-3.5 text-[#C86343]" />
+                          <BookOpen className="w-3.5 h-3.5 text-[#1B4D36]" />
                           Read Case Study
                         </span>
                       </button>
@@ -124,7 +124,7 @@ export default function Projects() {
                   >
                     <div className="space-y-3">
                       <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-stone-500 dark:text-stone-400">
-                        <span className="text-[#C86343] dark:text-[#DF7A5A] font-semibold uppercase tracking-wider">
+                        <span className="text-[#1B4D36] dark:text-[#34D399] font-semibold uppercase tracking-wider">
                           {project.category}
                         </span>
                         <span>•</span>
@@ -150,7 +150,7 @@ export default function Projects() {
                           key={i}
                           className="flex items-start gap-2.5 text-xs text-stone-600 dark:text-stone-400"
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#C86343] dark:bg-[#DF7A5A] mt-1.5 shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#1B4D36] dark:bg-[#34D399] mt-1.5 shrink-0" />
                           <span className="font-light leading-relaxed">{item}</span>
                         </div>
                       ))}
@@ -161,7 +161,7 @@ export default function Projects() {
                       {project.tools.map((tool) => (
                         <span
                           key={tool}
-                          className="px-2.5 py-1 rounded-lg text-[11px] font-mono border border-[#E7E0D2] dark:border-[#2E2B28] bg-[#FAF7F2] dark:bg-stone-800 text-stone-700 dark:text-stone-300"
+                          className="px-2.5 py-1 rounded-lg text-[11px] font-mono border border-[#DFE5DA] dark:border-[#223B2F] bg-[#F7F8F4] dark:bg-stone-800 text-stone-700 dark:text-stone-300"
                         >
                           {tool}
                         </span>
@@ -169,10 +169,10 @@ export default function Projects() {
                     </div>
 
                     {/* Action Links */}
-                    <div className="pt-4 flex flex-wrap items-center gap-3 border-t border-[#E7E0D2]/70 dark:border-[#2E2B28]/70">
+                    <div className="pt-4 flex flex-wrap items-center gap-3 border-t border-[#DFE5DA]/70 dark:border-[#223B2F]/70">
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-stone-900 dark:bg-stone-100 hover:bg-[#C86343] dark:hover:bg-[#DF7A5A] text-white dark:text-stone-900 dark:hover:text-white text-xs font-semibold transition-colors duration-200"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-stone-900 dark:bg-stone-100 hover:bg-[#1B4D36] dark:hover:bg-[#34D399] text-white dark:text-stone-900 dark:hover:text-white text-xs font-semibold transition-colors duration-200"
                       >
                         <span>View Project Details</span>
                         <ChevronRight className="w-3.5 h-3.5" />
@@ -183,7 +183,7 @@ export default function Projects() {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-stone-300 dark:border-stone-700 bg-white/80 dark:bg-stone-800/80 hover:border-[#C86343] dark:hover:border-[#DF7A5A] hover:text-[#C86343] dark:hover:text-[#DF7A5A] text-xs font-medium text-stone-700 dark:text-stone-300 transition-colors"
+                          className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-stone-300 dark:border-stone-700 bg-white/80 dark:bg-stone-800/80 hover:border-[#1B4D36] dark:hover:border-[#34D399] hover:text-[#1B4D36] dark:hover:text-[#34D399] text-xs font-medium text-stone-700 dark:text-stone-300 transition-colors"
                         >
                           <GithubIcon className="w-3.5 h-3.5" />
                           <span>Code</span>
@@ -195,7 +195,7 @@ export default function Projects() {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-stone-300 dark:border-stone-700 bg-white/80 dark:bg-stone-800/80 hover:border-[#C86343] dark:hover:border-[#DF7A5A] hover:text-[#C86343] dark:hover:text-[#DF7A5A] text-xs font-medium text-stone-700 dark:text-stone-300 transition-colors"
+                          className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-stone-300 dark:border-stone-700 bg-white/80 dark:bg-stone-800/80 hover:border-[#1B4D36] dark:hover:border-[#34D399] hover:text-[#1B4D36] dark:hover:text-[#34D399] text-xs font-medium text-stone-700 dark:text-stone-300 transition-colors"
                         >
                           <ExternalLink className="w-3.5 h-3.5" />
                           <span>Live</span>
@@ -210,7 +210,7 @@ export default function Projects() {
         </div>
 
         {/* Open Source Banner */}
-        <div className="mt-16 p-8 rounded-3xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-[#F4EFE6]/70 dark:bg-stone-900/40 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="mt-16 p-8 rounded-3xl border border-[#DFE5DA] dark:border-[#223B2F] bg-[#EFF2EB]/70 dark:bg-stone-900/40 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center sm:text-left">
             <h4 className="font-editorial text-2xl text-stone-900 dark:text-stone-100">
               Explore More Repositories on GitHub
@@ -223,7 +223,7 @@ export default function Projects() {
             href="https://github.com/Madhan-oss"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 hover:bg-[#C86343] dark:hover:bg-[#DF7A5A] dark:hover:text-white text-xs font-semibold transition-colors duration-200 shadow-xs shrink-0"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 hover:bg-[#1B4D36] dark:hover:bg-[#34D399] dark:hover:text-white text-xs font-semibold transition-colors duration-200 shadow-xs shrink-0"
           >
             <GithubIcon className="w-4 h-4" />
             <span>Visit @Madhan-oss</span>

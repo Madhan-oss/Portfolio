@@ -12,7 +12,7 @@ import { EXPERIENCES } from "@/data/portfolioData";
 
 export default function Experience() {
   const categoryPillColors: Record<string, string> = {
-    "Academic Internship": "bg-[#FAF7F2] dark:bg-stone-800 text-[#C86343] dark:text-[#DF7A5A] border-[#E7E0D2] dark:border-[#2E2B28]",
+    "Academic Internship": "bg-[#F7F8F4] dark:bg-stone-800 text-[#1B4D36] dark:text-[#34D399] border-[#DFE5DA] dark:border-[#223B2F]",
     "Industry Internship": "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/40",
     "Virtual Internship": "bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/40",
   };
@@ -20,18 +20,18 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-24 md:py-32 border-b border-[#E7E0D2] dark:border-[#2E2B28] relative"
+      className="py-24 md:py-32 border-b border-[#DFE5DA] dark:border-[#223B2F] relative"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C86343] dark:bg-[#DF7A5A]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1B4D36] dark:bg-[#34D399]" />
               04 // Professional Journey
             </div>
             <h2 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-normal text-stone-900 dark:text-stone-50 tracking-tight leading-tight">
-              Experience<span className="text-[#C86343] dark:text-[#DF7A5A]">.</span>
+              Experience<span className="text-[#1B4D36] dark:text-[#34D399]">.</span>
             </h2>
           </div>
           <p className="font-mono text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 max-w-xs">
@@ -40,15 +40,15 @@ export default function Experience() {
         </div>
 
         {/* Refined Vertical Timeline */}
-        <div className="relative border-l border-[#E7E0D2] dark:border-[#2E2B28] ml-4 md:ml-8 space-y-12">
+        <div className="relative border-l border-[#DFE5DA] dark:border-[#223B2F] ml-4 md:ml-8 space-y-12">
           {EXPERIENCES.map((exp, index) => {
             return (
               <div key={exp.id} className="relative pl-8 md:pl-12 group">
                 {/* Timeline node dot */}
-                <div className="absolute -left-[9px] top-1.5 w-[17px] h-[17px] rounded-full bg-[#FAF7F2] dark:bg-[#141312] border-2 border-[#C86343] dark:border-[#DF7A5A] group-hover:scale-125 transition-transform duration-300" />
+                <div className="absolute -left-[9px] top-1.5 w-[17px] h-[17px] rounded-full bg-[#F7F8F4] dark:bg-[#0B1410] border-2 border-[#1B4D36] dark:border-[#34D399] group-hover:scale-125 transition-transform duration-300" />
 
                 {/* Experience Card */}
-                <div className="p-6 sm:p-8 rounded-3xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-900/60 backdrop-blur-xs shadow-editorial hover:shadow-editorial-lg transition-all duration-300 space-y-5">
+                <div className="p-6 sm:p-8 rounded-3xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-900/60 backdrop-blur-xs shadow-editorial hover:shadow-editorial-lg transition-all duration-300 space-y-5">
                   {/* Top metadata row */}
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <span
@@ -60,7 +60,7 @@ export default function Experience() {
                     </span>
 
                     <div className="flex items-center gap-1.5 text-xs font-mono text-stone-500 dark:text-stone-400">
-                      <Calendar className="w-3.5 h-3.5 text-[#C86343] dark:text-[#DF7A5A]" />
+                      <Calendar className="w-3.5 h-3.5 text-[#1B4D36] dark:text-[#34D399]" />
                       <span>{exp.period}</span>
                     </div>
                   </div>
@@ -85,7 +85,7 @@ export default function Experience() {
                       )}
                     </div>
                     {exp.affiliations && (
-                      <p className="text-xs font-mono text-[#C86343] dark:text-[#DF7A5A] pt-0.5">
+                      <p className="text-xs font-mono text-[#1B4D36] dark:text-[#34D399] pt-0.5">
                         {exp.affiliations}
                       </p>
                     )}
@@ -98,18 +98,18 @@ export default function Experience() {
                         key={idx}
                         className="flex items-start gap-2.5 text-xs sm:text-sm text-stone-600 dark:text-stone-300"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#C86343] dark:bg-[#DF7A5A] mt-2 shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#1B4D36] dark:bg-[#34D399] mt-2 shrink-0" />
                         <span className="leading-relaxed font-light">{bullet}</span>
                       </div>
                     ))}
                   </div>
 
                   {/* Badges */}
-                  <div className="flex flex-wrap gap-2 pt-2 border-t border-[#E7E0D2]/70 dark:border-[#2E2B28]/70">
+                  <div className="flex flex-wrap gap-2 pt-2 border-t border-[#DFE5DA]/70 dark:border-[#223B2F]/70">
                     {exp.badges.map((badge) => (
                       <span
                         key={badge}
-                        className="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-[#FAF7F2] dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-[#E7E0D2] dark:border-[#2E2B28]"
+                        className="px-2.5 py-0.5 rounded-md text-[11px] font-mono bg-[#F7F8F4] dark:bg-stone-800 text-stone-700 dark:text-stone-300 border border-[#DFE5DA] dark:border-[#223B2F]"
                       >
                         {badge}
                       </span>
@@ -122,7 +122,7 @@ export default function Experience() {
         </div>
 
         {/* Recruiter Note */}
-        <div className="mt-12 p-4 rounded-2xl border border-dashed border-[#D5CAB7] dark:border-[#3F3B37] bg-[#FAF7F2]/50 dark:bg-stone-900/30 text-xs text-stone-500 dark:text-stone-400">
+        <div className="mt-12 p-4 rounded-2xl border border-dashed border-[#C8D2C2] dark:border-[#2F503F] bg-[#F7F8F4]/50 dark:bg-stone-900/30 text-xs text-stone-500 dark:text-stone-400">
           <p className="font-light">
             <strong className="font-medium text-stone-700 dark:text-stone-300">
               Integrity Statement:

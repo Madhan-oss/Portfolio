@@ -34,7 +34,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
       particleCount: 50,
       spread: 50,
       origin: { y: 0.6 },
-      colors: ["#C86343", "#DF7A5A", "#F3C9B8"],
+      colors: ["#1B4D36", "#34D399", "#BDE4CE"],
     });
   };
 
@@ -47,9 +47,9 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
       />
 
       {/* Modal Window */}
-      <div className="relative w-full max-w-4xl h-[92vh] bg-[#FAF7F2] dark:bg-[#1A1918] border border-[#E7E0D2] dark:border-[#2E2B28] rounded-3xl shadow-2xl z-10 flex flex-col overflow-hidden">
+      <div className="relative w-full max-w-4xl h-[92vh] bg-[#F7F8F4] dark:bg-[#101B15] border border-[#DFE5DA] dark:border-[#223B2F] rounded-3xl shadow-2xl z-10 flex flex-col overflow-hidden">
         {/* Modal Toolbar */}
-        <div className="flex items-center justify-between px-6 py-4 bg-[#FAF7F2]/95 dark:bg-[#1A1918]/95 backdrop-blur-md border-b border-[#E7E0D2] dark:border-[#2E2B28]">
+        <div className="flex items-center justify-between px-6 py-4 bg-[#F7F8F4]/95 dark:bg-[#101B15]/95 backdrop-blur-md border-b border-[#DFE5DA] dark:border-[#223B2F]">
           <div className="flex items-center gap-3">
             <span className="font-editorial text-lg text-stone-900 dark:text-stone-100 font-semibold">
               B Madhan Kumar — Resume
@@ -65,7 +65,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               href="/resume.pdf"
               download="B_Madhan_Kumar_Resume.pdf"
               onClick={handleDownload}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#C86343] hover:bg-[#B25234] text-white text-xs font-semibold shadow-xs transition-colors"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1B4D36] hover:bg-[#133A28] text-white text-xs font-semibold shadow-xs transition-colors"
             >
               <FileDown className="w-3.5 h-3.5" />
               <span>Download PDF</span>
@@ -76,7 +76,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-300 text-xs font-medium hover:border-[#C86343] transition-colors"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-300 text-xs font-medium hover:border-[#1B4D36] transition-colors"
             >
               <ExternalLink className="w-3.5 h-3.5" />
               <span>New Tab</span>
@@ -85,7 +85,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             {/* Close button */}
             <button
               onClick={onClose}
-              className="w-9 h-9 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors ml-1"
+              className="w-9 h-9 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors ml-1"
               aria-label="Close resume viewer"
             >
               <X className="w-4 h-4" />
@@ -98,12 +98,12 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           <iframe
             src="/resume.pdf#view=FitH"
             title="B Madhan Kumar Official Resume"
-            className="w-full h-full rounded-2xl border border-[#E7E0D2] dark:border-[#2E2B28] shadow-inner bg-white"
+            className="w-full h-full rounded-2xl border border-[#DFE5DA] dark:border-[#223B2F] shadow-inner bg-white"
           />
         </div>
 
         {/* Footer info bar */}
-        <div className="px-6 py-2.5 bg-[#FAF7F2] dark:bg-[#1A1918] border-t border-[#E7E0D2] dark:border-[#2E2B28] flex items-center justify-between text-[11px] font-mono text-stone-500 dark:text-stone-400">
+        <div className="px-6 py-2.5 bg-[#F7F8F4] dark:bg-[#101B15] border-t border-[#DFE5DA] dark:border-[#223B2F] flex items-center justify-between text-[11px] font-mono text-stone-500 dark:text-stone-400">
           <span>Authoritative Source: SRM IST &middot; Class of 2027</span>
           <span className="hidden sm:inline-block">
             madhankumar1824@gmail.com &middot; +91 6369373742

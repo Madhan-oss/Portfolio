@@ -43,18 +43,18 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-24 md:py-32 border-b border-[#E7E0D2] dark:border-[#2E2B28] relative overflow-hidden"
+      className="py-24 md:py-32 border-b border-[#DFE5DA] dark:border-[#223B2F] relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C86343] dark:bg-[#DF7A5A]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1B4D36] dark:bg-[#34D399]" />
               01 // Background & Philosophy
             </div>
             <h2 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-normal text-stone-900 dark:text-stone-50 tracking-tight leading-tight">
-              About Me<span className="text-[#C86343] dark:text-[#DF7A5A]">.</span>
+              About Me<span className="text-[#1B4D36] dark:text-[#34D399]">.</span>
             </h2>
           </div>
           <p className="font-mono text-xs uppercase tracking-wider text-stone-500 dark:text-stone-400 max-w-xs">
@@ -67,10 +67,10 @@ export default function About() {
           {/* Left Column: Authentic B&W Portrait in Moxa Editorial Frame */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-[380px]">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-[#E7E0D2] dark:border-[#2E2B28] bg-stone-100 dark:bg-stone-900 shadow-editorial relative group">
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-[#DFE5DA] dark:border-[#223B2F] bg-stone-100 dark:bg-stone-900 shadow-editorial relative group">
                 <Image
                   src={PERSONAL_INFO.photos.aboutPortrait}
-                  alt="Madhan Kumar — Portrait at SRM IST"
+                  alt="B Madhan Kumar in suit — SRM IST AI/ML Engineer"
                   fill
                   sizes="(max-width: 768px) 100vw, 380px"
                   className="object-cover object-center grayscale contrast-105 group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -78,7 +78,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-stone-900/10 pointer-events-none" />
 
                 {/* Editorial Caption Tag */}
-                <div className="absolute bottom-3 left-3 right-3 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md rounded-xl p-3 border border-[#E7E0D2]/80 dark:border-stone-700/80">
+                <div className="absolute bottom-3 left-3 right-3 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md rounded-xl p-3 border border-[#DFE5DA]/80 dark:border-stone-700/80">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-xs font-semibold text-stone-900 dark:text-stone-100">
@@ -88,7 +88,7 @@ export default function About() {
                         SRM IST, Tiruchirappalli (2023–2027)
                       </p>
                     </div>
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-[#F9E5DC] dark:bg-[#39241B] text-[#C86343] dark:text-[#DF7A5A] font-medium">
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-[#E8F3EC] dark:bg-[#142920] text-[#1B4D36] dark:text-[#34D399] font-medium">
                       AI &amp; ML
                     </span>
                   </div>
@@ -96,7 +96,7 @@ export default function About() {
               </div>
 
               {/* Decorative Outline Corner */}
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-[#D5CAB7] dark:border-[#3F3B37] rounded-bl-3xl pointer-events-none" />
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-[#C8D2C2] dark:border-[#2F503F] rounded-bl-3xl pointer-events-none" />
             </div>
           </div>
 
@@ -132,9 +132,9 @@ export default function About() {
                 return (
                   <div
                     key={pillar.title}
-                    className="p-5 rounded-2xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-900/60 hover:bg-white dark:hover:bg-stone-900 transition-all duration-300 shadow-xs hover:shadow-editorial"
+                    className="p-5 rounded-2xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-900/60 hover:bg-white dark:hover:bg-stone-900 transition-all duration-300 shadow-xs hover:shadow-editorial"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-[#F4EFE6] dark:bg-stone-800 text-[#C86343] dark:text-[#DF7A5A] flex items-center justify-center mb-3">
+                    <div className="w-9 h-9 rounded-xl bg-[#EFF2EB] dark:bg-stone-800 text-[#1B4D36] dark:text-[#34D399] flex items-center justify-center mb-3">
                       <Icon className="w-4 h-4" />
                     </div>
                     <h4 className="text-sm font-semibold text-stone-900 dark:text-stone-100 mb-1.5">
@@ -149,14 +149,14 @@ export default function About() {
             </div>
 
             {/* Quick Status Bar */}
-            <div className="p-4 rounded-xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-[#F4EFE6]/60 dark:bg-stone-800/40 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+            <div className="p-4 rounded-xl border border-[#DFE5DA] dark:border-[#223B2F] bg-[#EFF2EB]/60 dark:bg-stone-800/40 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
               <div className="flex items-center gap-2 text-stone-700 dark:text-stone-300">
-                <CheckCircle2 className="w-4 h-4 text-[#C86343] dark:text-[#DF7A5A]" />
+                <CheckCircle2 className="w-4 h-4 text-[#1B4D36] dark:text-[#34D399]" />
                 <span>B.Tech AI &amp; ML · Aug 2023 – May 2027</span>
               </div>
               <a
                 href="#experience"
-                className="text-[#C86343] dark:text-[#DF7A5A] hover:underline font-semibold"
+                className="text-[#1B4D36] dark:text-[#34D399] hover:underline font-semibold"
               >
                 View Experience &amp; Internships →
               </a>

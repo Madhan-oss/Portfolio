@@ -18,9 +18,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-[#E7E0D2] dark:border-[#2E2B28] bg-[#F4EFE6]/60 dark:bg-[#141312] py-16 transition-colors">
+    <footer className="border-t border-[#DFE5DA] dark:border-[#223B2F] bg-[#EFF2EB]/60 dark:bg-[#0B1410] py-16 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start justify-between pb-12 border-b border-[#E7E0D2] dark:border-[#2E2B28]">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start justify-between pb-12 border-b border-[#DFE5DA] dark:border-[#223B2F]">
           {/* Brand & Tagline */}
           <div className="md:col-span-6 space-y-4">
             <div className="flex items-center gap-2">
@@ -28,7 +28,7 @@ export default function Footer() {
                 M
               </span>
               <span className="font-editorial text-2xl text-stone-900 dark:text-stone-100 font-semibold tracking-tight">
-                Madhan Kumar<span className="text-[#C86343] dark:text-[#DF7A5A]">.</span>
+                Madhan Kumar<span className="text-[#1B4D36] dark:text-[#34D399]">.</span>
               </span>
             </div>
             <p className="text-sm text-stone-600 dark:text-stone-400 font-light max-w-md leading-relaxed">
@@ -45,32 +45,32 @@ export default function Footer() {
             </span>
             <ul className="space-y-2 text-xs font-medium text-stone-600 dark:text-stone-400">
               <li>
-                <a href="#about" className="hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors">
+                <a href="#about" className="hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors">
                   About Me
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors">
+                <a href="#skills" className="hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors">
                   Technical Skills
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors">
+                <a href="#projects" className="hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors">
                   Featured Projects
                 </a>
               </li>
               <li>
-                <a href="#experience" className="hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors">
+                <a href="#experience" className="hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors">
                   Experience &amp; Internships
                 </a>
               </li>
               <li>
-                <a href="#education" className="hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors">
+                <a href="#education" className="hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors">
                   Education &amp; Credentials
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors">
+                <a href="#contact" className="hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors">
                   Contact
                 </a>
               </li>
@@ -87,7 +87,7 @@ export default function Footer() {
                 href={PERSONAL_INFO.socials.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#C86343] dark:hover:text-[#DF7A5A] hover:border-[#C86343] transition-colors"
+                className="w-9 h-9 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#1B4D36] dark:hover:text-[#34D399] hover:border-[#1B4D36] transition-colors"
                 aria-label="GitHub Profile"
               >
                 <GithubIcon className="w-4 h-4" />
@@ -97,7 +97,7 @@ export default function Footer() {
                 href={PERSONAL_INFO.socials.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#C86343] dark:hover:text-[#DF7A5A] hover:border-[#C86343] transition-colors"
+                className="w-9 h-9 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#1B4D36] dark:hover:text-[#34D399] hover:border-[#1B4D36] transition-colors"
                 aria-label="LinkedIn Profile"
               >
                 <LinkedinIcon className="w-4 h-4" />
@@ -105,7 +105,7 @@ export default function Footer() {
 
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
-                className="w-9 h-9 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#C86343] dark:hover:text-[#DF7A5A] hover:border-[#C86343] transition-colors"
+                className="w-9 h-9 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#1B4D36] dark:hover:text-[#34D399] hover:border-[#1B4D36] transition-colors"
                 aria-label="Email Address"
               >
                 <Mail className="w-4 h-4" />
@@ -114,7 +114,7 @@ export default function Footer() {
 
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-300 hover:text-[#C86343] dark:hover:text-[#DF7A5A] text-xs font-mono transition-colors mt-2"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-300 hover:text-[#1B4D36] dark:hover:text-[#34D399] text-xs font-mono transition-colors mt-2"
             >
               <span>Back to Top</span>
               <ArrowUp className="w-3.5 h-3.5" />

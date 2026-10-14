@@ -79,8 +79,8 @@ export const PERSONAL_INFO = {
     email: "mailto:madhankumar1824@gmail.com",
   },
   photos: {
-    heroSuit: "/images/madhan-suit.jpg",
-    aboutPortrait: "/images/madhan-portrait.jpg",
+    heroSuit: "/images/madhan-portrait.jpg", // Casual portrait for Hero (first photo)
+    aboutPortrait: "/images/madhan-suit.jpg", // Professional suit portrait for About section
   },
   resumePath: "/resume.pdf",
 };

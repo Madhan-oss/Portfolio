@@ -12,6 +12,7 @@ import Achievements from "@/components/Achievements";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ResumeModal from "@/components/ResumeModal";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
@@ -44,7 +45,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FAF7F2] dark:bg-[#141312] text-[#191716] dark:text-[#F7F5F0] transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-[#F7F8F4] dark:bg-[#0B1410] text-[#121A15] dark:text-[#F4F8F5] transition-colors duration-300">
       {/* Top Floating Navigation */}
       <Navbar
         onOpenResume={() => setIsResumeOpen(true)}
@@ -72,6 +73,9 @@ export default function Home() {
         isOpen={isResumeOpen}
         onClose={() => setIsResumeOpen(false)}
       />
+
+      {/* Floating Scroll to Top */}
+      <ScrollToTop />
     </div>
   );
 }

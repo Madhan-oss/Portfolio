@@ -68,7 +68,7 @@ export default function Contact() {
         particleCount: 80,
         spread: 60,
         origin: { y: 0.7 },
-        colors: ["#C86343", "#DF7A5A", "#F3C9B8", "#191716"],
+        colors: ["#1B4D36", "#34D399", "#BDE4CE", "#121A15"],
       });
 
       // Construct mailto link
@@ -94,13 +94,13 @@ export default function Contact() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C86343] dark:bg-[#DF7A5A]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-800/70 text-[11px] font-mono uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1B4D36] dark:bg-[#34D399]" />
               07 // Let&apos;s Build
             </div>
             <h2 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-normal text-stone-900 dark:text-stone-50 tracking-tight leading-tight">
               Have an idea?<br />
-              <span className="italic text-[#C86343] dark:text-[#DF7A5A]">
+              <span className="italic text-[#1B4D36] dark:text-[#34D399]">
                 Let&apos;s build something useful.
               </span>
             </h2>
@@ -113,7 +113,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14">
           {/* Left Column: Direct Contact Info & Channels */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="p-8 rounded-3xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/80 dark:bg-stone-900/60 shadow-editorial space-y-6">
+            <div className="p-8 rounded-3xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white/80 dark:bg-stone-900/60 shadow-editorial space-y-6">
               <div className="space-y-2">
                 <h3 className="font-editorial text-2xl text-stone-900 dark:text-stone-100">
                   Direct Channels
@@ -125,15 +125,15 @@ export default function Contact() {
               </div>
 
               {/* Email channel */}
-              <div className="p-4 rounded-2xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-[#FAF7F2] dark:bg-stone-800/60 space-y-1.5">
+              <div className="p-4 rounded-2xl border border-[#DFE5DA] dark:border-[#223B2F] bg-[#F7F8F4] dark:bg-stone-800/60 space-y-1.5">
                 <div className="flex items-center justify-between text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5">
-                    <Mail className="w-3.5 h-3.5 text-[#C86343] dark:text-[#DF7A5A]" />
+                    <Mail className="w-3.5 h-3.5 text-[#1B4D36] dark:text-[#34D399]" />
                     Email
                   </span>
                   <button
                     onClick={() => handleCopy(PERSONAL_INFO.email, "email")}
-                    className="flex items-center gap-1 text-[#C86343] dark:text-[#DF7A5A] hover:underline"
+                    className="flex items-center gap-1 text-[#1B4D36] dark:text-[#34D399] hover:underline"
                   >
                     {copiedType === "email" ? (
                       <>
@@ -148,22 +148,22 @@ export default function Contact() {
                 </div>
                 <a
                   href={`mailto:${PERSONAL_INFO.email}`}
-                  className="text-sm font-medium text-stone-900 dark:text-stone-100 hover:text-[#C86343] dark:hover:text-[#DF7A5A] break-all block"
+                  className="text-sm font-medium text-stone-900 dark:text-stone-100 hover:text-[#1B4D36] dark:hover:text-[#34D399] break-all block"
                 >
                   {PERSONAL_INFO.email}
                 </a>
               </div>
 
               {/* Phone channel */}
-              <div className="p-4 rounded-2xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-[#FAF7F2] dark:bg-stone-800/60 space-y-1.5">
+              <div className="p-4 rounded-2xl border border-[#DFE5DA] dark:border-[#223B2F] bg-[#F7F8F4] dark:bg-stone-800/60 space-y-1.5">
                 <div className="flex items-center justify-between text-[11px] font-mono text-stone-400">
                   <span className="flex items-center gap-1.5">
-                    <Phone className="w-3.5 h-3.5 text-[#C86343] dark:text-[#DF7A5A]" />
+                    <Phone className="w-3.5 h-3.5 text-[#1B4D36] dark:text-[#34D399]" />
                     Phone / WhatsApp
                   </span>
                   <button
                     onClick={() => handleCopy(PERSONAL_INFO.phone, "phone")}
-                    className="flex items-center gap-1 text-[#C86343] dark:text-[#DF7A5A] hover:underline"
+                    className="flex items-center gap-1 text-[#1B4D36] dark:text-[#34D399] hover:underline"
                   >
                     {copiedType === "phone" ? (
                       <>
@@ -178,7 +178,7 @@ export default function Contact() {
                 </div>
                 <a
                   href={`tel:${PERSONAL_INFO.phone}`}
-                  className="text-sm font-medium text-stone-900 dark:text-stone-100 hover:text-[#C86343] dark:hover:text-[#DF7A5A] block"
+                  className="text-sm font-medium text-stone-900 dark:text-stone-100 hover:text-[#1B4D36] dark:hover:text-[#34D399] block"
                 >
                   {PERSONAL_INFO.phone}
                 </a>
@@ -194,7 +194,7 @@ export default function Contact() {
                     href={PERSONAL_INFO.socials.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 rounded-xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 hover:border-[#C86343] dark:hover:border-[#DF7A5A] flex items-center justify-between text-xs font-medium text-stone-800 dark:text-stone-200 transition-colors"
+                    className="p-3 rounded-xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 hover:border-[#1B4D36] dark:hover:border-[#34D399] flex items-center justify-between text-xs font-medium text-stone-800 dark:text-stone-200 transition-colors"
                   >
                     <span className="flex items-center gap-2">
                       <LinkedinIcon className="w-4 h-4 text-[#0077b5]" />
@@ -207,7 +207,7 @@ export default function Contact() {
                     href={PERSONAL_INFO.socials.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 rounded-xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 hover:border-[#C86343] dark:hover:border-[#DF7A5A] flex items-center justify-between text-xs font-medium text-stone-800 dark:text-stone-200 transition-colors"
+                    className="p-3 rounded-xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 hover:border-[#1B4D36] dark:hover:border-[#34D399] flex items-center justify-between text-xs font-medium text-stone-800 dark:text-stone-200 transition-colors"
                   >
                     <span className="flex items-center gap-2">
                       <GithubIcon className="w-4 h-4 text-stone-800 dark:text-stone-200" />
@@ -219,8 +219,8 @@ export default function Contact() {
               </div>
 
               {/* Location info */}
-              <div className="pt-2 flex items-center gap-2 text-xs font-mono text-stone-500 dark:text-stone-400 border-t border-[#E7E0D2]/70 dark:border-[#2E2B28]/70">
-                <MapPin className="w-4 h-4 text-[#C86343] dark:text-[#DF7A5A]" />
+              <div className="pt-2 flex items-center gap-2 text-xs font-mono text-stone-500 dark:text-stone-400 border-t border-[#DFE5DA]/70 dark:border-[#223B2F]/70">
+                <MapPin className="w-4 h-4 text-[#1B4D36] dark:text-[#34D399]" />
                 <span>Tiruchirappalli, Tamil Nadu, India · UTC+05:30</span>
               </div>
             </div>
@@ -228,10 +228,10 @@ export default function Contact() {
 
           {/* Right Column: Validated Contact Form */}
           <div className="lg:col-span-7">
-            <div className="p-8 sm:p-10 rounded-3xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/80 dark:bg-stone-900/60 shadow-editorial relative">
+            <div className="p-8 sm:p-10 rounded-3xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white/80 dark:bg-stone-900/60 shadow-editorial relative">
               {isSuccess ? (
                 <div className="py-12 text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-[#F9E5DC] dark:bg-[#3B251D] text-[#C86343] dark:text-[#DF7A5A] flex items-center justify-center mx-auto shadow-sm">
+                  <div className="w-16 h-16 rounded-full bg-[#E8F3EC] dark:bg-[#142920] text-[#1B4D36] dark:text-[#34D399] flex items-center justify-center mx-auto shadow-sm">
                     <Check className="w-8 h-8" />
                   </div>
                   <h3 className="font-editorial text-3xl text-stone-900 dark:text-stone-100 font-normal">
@@ -256,13 +256,13 @@ export default function Contact() {
                           message: "",
                         });
                       }}
-                      className="px-5 py-2.5 rounded-full border border-stone-300 dark:border-stone-700 text-xs font-semibold text-stone-800 dark:text-stone-200 hover:bg-[#FAF7F2] dark:hover:bg-stone-800 transition-colors"
+                      className="px-5 py-2.5 rounded-full border border-stone-300 dark:border-stone-700 text-xs font-semibold text-stone-800 dark:text-stone-200 hover:bg-[#F7F8F4] dark:hover:bg-stone-800 transition-colors"
                     >
                       Send Another Message
                     </button>
                     <a
                       href={`mailto:${PERSONAL_INFO.email}`}
-                      className="px-5 py-2.5 rounded-full bg-[#C86343] hover:bg-[#B25234] text-white text-xs font-semibold shadow-xs transition-colors"
+                      className="px-5 py-2.5 rounded-full bg-[#1B4D36] hover:bg-[#133A28] text-white text-xs font-semibold shadow-xs transition-colors"
                     >
                       Open Email App
                     </a>
@@ -290,8 +290,8 @@ export default function Contact() {
                         className={`w-full px-4 py-3 rounded-xl border ${
                           errors.name
                             ? "border-rose-400 bg-rose-50/30"
-                            : "border-[#E7E0D2] dark:border-[#2E2B28] bg-[#FAF7F2] dark:bg-stone-800"
-                        } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#C86343] dark:focus:border-[#DF7A5A] transition-colors`}
+                            : "border-[#DFE5DA] dark:border-[#223B2F] bg-[#F7F8F4] dark:bg-stone-800"
+                        } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#1B4D36] dark:focus:border-[#34D399] transition-colors`}
                       />
                       {errors.name && (
                         <p className="text-[11px] text-rose-500 font-mono flex items-center gap-1">
@@ -320,8 +320,8 @@ export default function Contact() {
                         className={`w-full px-4 py-3 rounded-xl border ${
                           errors.email
                             ? "border-rose-400 bg-rose-50/30"
-                            : "border-[#E7E0D2] dark:border-[#2E2B28] bg-[#FAF7F2] dark:bg-stone-800"
-                        } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#C86343] dark:focus:border-[#DF7A5A] transition-colors`}
+                            : "border-[#DFE5DA] dark:border-[#223B2F] bg-[#F7F8F4] dark:bg-stone-800"
+                        } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#1B4D36] dark:focus:border-[#34D399] transition-colors`}
                       />
                       {errors.email && (
                         <p className="text-[11px] text-rose-500 font-mono flex items-center gap-1">
@@ -351,8 +351,8 @@ export default function Contact() {
                       className={`w-full px-4 py-3 rounded-xl border ${
                         errors.subject
                           ? "border-rose-400 bg-rose-50/30"
-                          : "border-[#E7E0D2] dark:border-[#2E2B28] bg-[#FAF7F2] dark:bg-stone-800"
-                      } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#C86343] dark:focus:border-[#DF7A5A] transition-colors`}
+                          : "border-[#DFE5DA] dark:border-[#223B2F] bg-[#F7F8F4] dark:bg-stone-800"
+                      } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#1B4D36] dark:focus:border-[#34D399] transition-colors`}
                     />
                     {errors.subject && (
                       <p className="text-[11px] text-rose-500 font-mono flex items-center gap-1">
@@ -381,8 +381,8 @@ export default function Contact() {
                       className={`w-full px-4 py-3 rounded-xl border ${
                         errors.message
                           ? "border-rose-400 bg-rose-50/30"
-                          : "border-[#E7E0D2] dark:border-[#2E2B28] bg-[#FAF7F2] dark:bg-stone-800"
-                      } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#C86343] dark:focus:border-[#DF7A5A] transition-colors resize-none`}
+                          : "border-[#DFE5DA] dark:border-[#223B2F] bg-[#F7F8F4] dark:bg-stone-800"
+                      } text-stone-900 dark:text-stone-100 text-sm focus:outline-none focus:border-[#1B4D36] dark:focus:border-[#34D399] transition-colors resize-none`}
                     />
                     {errors.message && (
                       <p className="text-[11px] text-rose-500 font-mono flex items-center gap-1">
@@ -396,7 +396,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-[#C86343] hover:bg-[#B25234] disabled:bg-stone-400 text-white font-semibold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
+                    className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-[#1B4D36] hover:bg-[#133A28] disabled:bg-stone-400 text-white font-semibold text-xs uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
                   >
                     {isSubmitting ? (
                       <span>Composing Inquiry...</span>

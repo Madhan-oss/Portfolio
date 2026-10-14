@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const viewport: Viewport = {
-  themeColor: "#FAF7F2",
+  themeColor: "#F7F8F4",
   width: "device-width",
   initialScale: 1,
 };
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Madhan Kumar Portfolio",
     images: [
       {
-        url: "/images/madhan-suit.jpg",
+        url: "/images/madhan-portrait.jpg",
         width: 682,
         height: 1024,
         alt: "B Madhan Kumar — Full Stack Developer & AI/ML Enthusiast",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "B Madhan Kumar | Full Stack Developer & AI/ML Enthusiast",
     description:
       "Full Stack Developer & AI/ML undergraduate at SRM IST building intelligent applications and web platforms.",
-    images: ["/images/madhan-suit.jpg"],
+    images: ["/images/madhan-portrait.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -71,7 +71,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#FAF7F2] dark:bg-[#141312] text-[#191716] dark:text-[#F7F5F0] antialiased selection:bg-[#F3C9B8] selection:text-[#191716] dark:selection:bg-[#933E23] dark:selection:text-white">
+      <body className="min-h-full flex flex-col bg-[#F7F8F4] dark:bg-[#0B1410] text-[#121A15] dark:text-[#F4F8F5] antialiased selection:bg-[#BDE4CE] selection:text-[#0E2B1E] dark:selection:bg-[#1B4D36] dark:selection:text-white">
         {children}
       </body>
     </html>

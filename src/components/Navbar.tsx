@@ -72,7 +72,7 @@ export default function Navbar({
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "py-3 bg-[#FAF7F2]/90 dark:bg-[#141312]/90 backdrop-blur-md border-b border-[#E7E0D2] dark:border-[#2E2B28] shadow-sm"
+            ? "py-3 bg-[#F7F8F4]/90 dark:bg-[#0B1410]/90 backdrop-blur-md border-b border-[#DFE5DA] dark:border-[#223B2F] shadow-sm"
             : "py-5 bg-transparent"
         }`}
       >
@@ -88,7 +88,7 @@ export default function Navbar({
               </span>
               <div className="flex flex-col">
                 <span className="font-serif text-xl tracking-tight leading-none text-stone-900 dark:text-stone-100 font-semibold">
-                  Madhan Kumar<span className="text-[#C86343] dark:text-[#DF7A5A]">.</span>
+                  Madhan Kumar<span className="text-[#1B4D36] dark:text-[#34D399]">.</span>
                 </span>
                 <span className="text-[10px] uppercase tracking-widest text-stone-500 dark:text-stone-400 font-mono mt-0.5">
                   Portfolio · 2026
@@ -97,7 +97,7 @@ export default function Navbar({
             </Link>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-1 bg-[#F4EFE6]/70 dark:bg-[#1F1D1C]/70 px-4 py-1.5 rounded-full border border-[#E7E0D2]/80 dark:border-[#2E2B28] shadow-inner">
+            <nav className="hidden lg:flex items-center gap-1 bg-[#EFF2EB]/70 dark:bg-[#15241D]/70 px-4 py-1.5 rounded-full border border-[#DFE5DA]/80 dark:border-[#223B2F] shadow-inner">
               {NAV_LINKS.map((link) => {
                 const isActive = activeSection === link.href;
                 return (
@@ -106,7 +106,7 @@ export default function Navbar({
                     href={link.href}
                     className={`px-3.5 py-1 text-xs tracking-wide rounded-full transition-all duration-200 font-medium ${
                       isActive
-                        ? "bg-white dark:bg-stone-800 text-[#C86343] dark:text-[#DF7A5A] shadow-xs font-semibold"
+                        ? "bg-white dark:bg-stone-800 text-[#1B4D36] dark:text-[#34D399] shadow-xs font-semibold"
                         : "text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-white/40 dark:hover:bg-stone-800/40"
                     }`}
                   >
@@ -122,7 +122,7 @@ export default function Navbar({
               <button
                 onClick={toggleTheme}
                 aria-label="Toggle visual theme"
-                className="w-9 h-9 rounded-full flex items-center justify-center border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300 hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors"
+                className="w-9 h-9 rounded-full flex items-center justify-center border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300 hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors"
                 title={isDark ? "Switch to warm light theme" : "Switch to warm dark theme"}
               >
                 {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
@@ -131,16 +131,16 @@ export default function Navbar({
               {/* Resume Button */}
               <button
                 onClick={onOpenResume}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/80 dark:bg-stone-800/80 text-stone-800 dark:text-stone-200 hover:border-[#C86343] dark:hover:border-[#DF7A5A] hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-all"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white/80 dark:bg-stone-800/80 text-stone-800 dark:text-stone-200 hover:border-[#1B4D36] dark:hover:border-[#34D399] hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-all"
               >
-                <FileDown className="w-3.5 h-3.5 text-[#C86343] dark:text-[#DF7A5A]" />
+                <FileDown className="w-3.5 h-3.5 text-[#1B4D36] dark:text-[#34D399]" />
                 <span>Resume</span>
               </button>
 
               {/* Connect CTA */}
               <a
                 href="#contact"
-                className="inline-flex items-center gap-1 px-4 py-1.5 text-xs font-semibold rounded-full bg-[#C86343] hover:bg-[#B25234] text-white shadow-xs transition-all duration-200 hover:shadow-md"
+                className="inline-flex items-center gap-1 px-4 py-1.5 text-xs font-semibold rounded-full bg-[#1B4D36] hover:bg-[#133A28] text-white shadow-xs transition-all duration-200 hover:shadow-md"
               >
                 <span>Let&apos;s Connect</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -152,14 +152,14 @@ export default function Navbar({
               <button
                 onClick={toggleTheme}
                 aria-label="Toggle theme"
-                className="w-9 h-9 rounded-full flex items-center justify-center border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/70 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300"
+                className="w-9 h-9 rounded-full flex items-center justify-center border border-[#DFE5DA] dark:border-[#223B2F] bg-white/70 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300"
               >
                 {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
               </button>
 
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="w-10 h-10 rounded-full border border-[#E7E0D2] dark:border-[#2E2B28] bg-white/80 dark:bg-stone-800/80 text-stone-900 dark:text-stone-100 flex items-center justify-center"
+                className="w-10 h-10 rounded-full border border-[#DFE5DA] dark:border-[#223B2F] bg-white/80 dark:bg-stone-800/80 text-stone-900 dark:text-stone-100 flex items-center justify-center"
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? (
@@ -183,7 +183,7 @@ export default function Navbar({
           />
 
           {/* Drawer content */}
-          <div className="fixed top-20 right-4 left-4 max-w-sm ml-auto bg-[#FAF7F2] dark:bg-[#1A1918] border border-[#E7E0D2] dark:border-[#2E2B28] rounded-2xl p-6 shadow-2xl z-50">
+          <div className="fixed top-20 right-4 left-4 max-w-sm ml-auto bg-[#F7F8F4] dark:bg-[#101B15] border border-[#DFE5DA] dark:border-[#223B2F] rounded-2xl p-6 shadow-2xl z-50">
             <div className="flex flex-col gap-2">
               <div className="text-[11px] font-mono uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-1">
                 Navigation
@@ -193,28 +193,28 @@ export default function Navbar({
                   key={link.href}
                   href={link.href}
                   onClick={handleLinkClick}
-                  className="px-3 py-2 rounded-lg text-sm font-medium text-stone-700 dark:text-stone-200 hover:bg-[#F4EFE6] dark:hover:bg-stone-800 hover:text-[#C86343] dark:hover:text-[#DF7A5A] transition-colors"
+                  className="px-3 py-2 rounded-lg text-sm font-medium text-stone-700 dark:text-stone-200 hover:bg-[#EFF2EB] dark:hover:bg-stone-800 hover:text-[#1B4D36] dark:hover:text-[#34D399] transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
 
-              <div className="pt-4 mt-2 border-t border-[#E7E0D2] dark:border-[#2E2B28] flex flex-col gap-2.5">
+              <div className="pt-4 mt-2 border-t border-[#DFE5DA] dark:border-[#223B2F] flex flex-col gap-2.5">
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
                     onOpenResume();
                   }}
-                  className="w-full flex items-center justify-center gap-2 px-4 py-2 text-xs font-semibold rounded-xl border border-[#E7E0D2] dark:border-[#2E2B28] bg-white dark:bg-stone-800 text-stone-800 dark:text-stone-200"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2 text-xs font-semibold rounded-xl border border-[#DFE5DA] dark:border-[#223B2F] bg-white dark:bg-stone-800 text-stone-800 dark:text-stone-200"
                 >
-                  <FileDown className="w-4 h-4 text-[#C86343] dark:text-[#DF7A5A]" />
+                  <FileDown className="w-4 h-4 text-[#1B4D36] dark:text-[#34D399]" />
                   <span>View / Download Resume (PDF)</span>
                 </button>
 
                 <a
                   href="#contact"
                   onClick={handleLinkClick}
-                  className="w-full flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-semibold rounded-xl bg-[#C86343] text-white"
+                  className="w-full flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-semibold rounded-xl bg-[#1B4D36] text-white"
                 >
                   <span>Let&apos;s Connect</span>
                   <ArrowUpRight className="w-4 h-4" />

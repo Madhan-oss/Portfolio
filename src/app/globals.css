@@ -6,59 +6,59 @@
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-  --color-sand-50: #FCFAF6;
-  --color-sand-100: #FAF7F2;
-  --color-sand-200: #F4EFE6;
-  --color-sand-300: #EBE3D5;
-  --color-sand-400: #D8CDBC;
-  --color-sand-500: #BFB09B;
+  /* Off-White Natural Foundation */
+  --color-offwhite-50: #FAFAF7;
+  --color-offwhite-100: #F5F6F1;
+  --color-offwhite-200: #ECEEE7;
+  --color-offwhite-300: #DFE2DA;
+  --color-offwhite-400: #CCD2C5;
+  --color-offwhite-500: #B2BCA8;
 
-  --color-terracotta-50: #FDF5F2;
-  --color-terracotta-100: #F9E5DC;
-  --color-terracotta-200: #F3C9B8;
-  --color-terracotta-500: #C86343;
-  --color-terracotta-600: #B25234;
-  --color-terracotta-700: #933E23;
+  /* Forest Green Palette */
+  --color-forest-50: #EDF5F0;
+  --color-forest-100: #D8EADE;
+  --color-forest-200: #B2D6C0;
+  --color-forest-500: #1B4D36;
+  --color-forest-600: #143D2A;
+  --color-forest-700: #0E2B1E;
+  --color-forest-accent: #34D399;
 
-  --color-sage-50: #F4F6F4;
-  --color-sage-100: #E6ECE6;
-  --color-sage-600: #556D5E;
-
-  --color-charcoal-900: #191716;
-  --color-charcoal-800: #292624;
-  --color-charcoal-700: #443F3B;
-  --color-charcoal-600: #5D5650;
-  --color-charcoal-500: #787068;
+  /* Deep Pine Charcoal Dark Mode */
+  --color-pine-900: #0D1612;
+  --color-pine-800: #13201A;
+  --color-pine-700: #1A2C24;
+  --color-pine-600: #243C31;
+  --color-pine-500: #335546;
 }
 
 :root {
-  --bg-primary: #FAF7F2;
-  --bg-secondary: #F4EFE6;
+  --bg-primary: #F7F8F4;        /* Soothing luxury Off-White */
+  --bg-secondary: #EFF2EB;      /* Soft parchment Off-White */
   --bg-card: #FFFFFF;
-  --bg-muted: #EBE3D5;
-  --border-subtle: #E7E0D2;
-  --border-strong: #D5CAB7;
-  --text-primary: #191716;
-  --text-secondary: #443F3B;
-  --text-muted: #787068;
-  --accent-terracotta: #C86343;
-  --accent-terracotta-hover: #B25234;
-  --accent-terracotta-subtle: #F9E5DC;
+  --bg-muted: #E2E7DC;
+  --border-subtle: #DFE5DA;
+  --border-strong: #C8D2C2;
+  --text-primary: #121A15;      /* Deep forest charcoal */
+  --text-secondary: #2E4035;    /* Medium forest slate */
+  --text-muted: #5F7367;
+  --accent-forest: #1B4D36;     /* Rich Forest Green */
+  --accent-forest-hover: #133A28;
+  --accent-forest-subtle: #E8F3EC;
 }
 
 .dark {
-  --bg-primary: #141312;
-  --bg-secondary: #1A1918;
-  --bg-card: #1F1D1C;
-  --bg-muted: #2A2725;
-  --border-subtle: #2E2B28;
-  --border-strong: #3F3B37;
-  --text-primary: #F7F5F0;
-  --text-secondary: #D4CEBF;
-  --text-muted: #968F83;
-  --accent-terracotta: #DF7A5A;
-  --accent-terracotta-hover: #E88E72;
-  --accent-terracotta-subtle: #2C211D;
+  --bg-primary: #0B1410;        /* Deep velvety pine night */
+  --bg-secondary: #101B15;      /* Secondary dark pine */
+  --bg-card: #15241D;           /* Dark pine card */
+  --bg-muted: #1B2F25;
+  --border-subtle: #223B2F;
+  --border-strong: #2F503F;
+  --text-primary: #F4F8F5;      /* Crisp moonlit off-white */
+  --text-secondary: #C3D5CA;
+  --text-muted: #7E998B;
+  --accent-forest: #34D399;     /* Glowing emerald forest */
+  --accent-forest-hover: #6EE7B7;
+  --accent-forest-subtle: #132A1F;
 }
 
 html {
@@ -77,12 +77,12 @@ body {
 }
 
 ::selection {
-  background-color: #F3C9B8;
-  color: #191716;
+  background-color: #BDE4CE;
+  color: #0E2B1E;
 }
 
 .dark ::selection {
-  background-color: #933E23;
+  background-color: #1B4D36;
   color: #FFFFFF;
 }
 
@@ -98,7 +98,7 @@ body {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-terracotta);
+  background: var(--accent-forest);
 }
 
 /* Moxa editorial serif styling */
@@ -107,27 +107,27 @@ body {
   letter-spacing: -0.015em;
 }
 
-/* Subtle paper texture feel */
+/* Subtle organic paper texture feel */
 .bg-grain {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-image: radial-gradient(rgba(27, 77, 54, 0.04) 1px, transparent 0);
   background-size: 24px 24px;
 }
 
 .dark .bg-grain {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-image: radial-gradient(rgba(52, 211, 153, 0.04) 1px, transparent 0);
   background-size: 24px 24px;
 }
 
-/* Glassmorphism tuned for warm tones */
+/* Glassmorphism tuned for Forest Green + Off-White */
 .glass-warm {
-  background-color: rgba(250, 247, 242, 0.82);
+  background-color: rgba(247, 248, 244, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
 }
 
 .dark .glass-warm {
-  background-color: rgba(20, 19, 18, 0.85);
+  background-color: rgba(11, 20, 16, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
@@ -135,9 +135,9 @@ body {
 
 /* Soft editorial card shadows */
 .shadow-editorial {
-  box-shadow: 0 4px 20px -2px rgba(25, 23, 22, 0.04), 0 2px 6px -1px rgba(25, 23, 22, 0.02);
+  box-shadow: 0 4px 20px -2px rgba(18, 26, 21, 0.04), 0 2px 6px -1px rgba(18, 26, 21, 0.02);
 }
 
 .shadow-editorial-lg {
-  box-shadow: 0 12px 36px -4px rgba(25, 23, 22, 0.08), 0 4px 12px -2px rgba(25, 23, 22, 0.04);
+  box-shadow: 0 12px 36px -4px rgba(18, 26, 21, 0.08), 0 4px 12px -2px rgba(18, 26, 21, 0.04);
 }
